@@ -17,6 +17,7 @@ public class Main {
         town1.addFamily(family2);
         town1.display();
         family2.displayFamily();
+        town1.deleteFamily("Hà Nam");
 //       family1.delete("Anh");
 //       family1.displayFamily();
 //       family1.edit("Đạt",new Person("Phong","Bia ôm",1234547780));
