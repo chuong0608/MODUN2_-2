@@ -3,7 +3,7 @@ package quanlyphuongtien;
 import java.util.Arrays;
 
 public class QuanLyXeMay extends XeMay implements QuanLy<XeMay>{
-    private XeMay [] danhSach = new XeMay[4];
+    private final XeMay [] danhSach = new XeMay[4];
     private int size=0;
     @Override
     public void Them(XeMay xeMay) {
@@ -35,7 +35,7 @@ public class QuanLyXeMay extends XeMay implements QuanLy<XeMay>{
     @Override
     public int TimKiem(String name) {
         for (int i = 0; i < size; i++) {
-            if(name ==  danhSach[i].getTen()){
+            if(name.equals(  danhSach[i].getTen())){
                 return i;
             }
         }

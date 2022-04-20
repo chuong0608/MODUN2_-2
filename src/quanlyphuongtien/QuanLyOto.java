@@ -29,7 +29,7 @@ public class QuanLyOto extends Oto implements QuanLy<Oto> {
     @Override
     public int TimKiem(String name) {
         for (int i = 0; i <size ; i++) {
-            if(name == otos[i].getTen()){
+            if(name.equals( otos[i].getTen())){
                 return i;
             }
         }
